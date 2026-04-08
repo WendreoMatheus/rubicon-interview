@@ -1,0 +1,66 @@
+<div class="container">
+  <h1>Product Catalog</h1>
+
+  <div class="filters">
+    <input
+      type="text"
+      placeholder="Search by name..."
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="applyFilters()" />
+
+    <select [(ngModel)]="selectedCategory" (ngModelChange)="applyFilters()">
+      <option value="">All Categories</option>
+      <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+    </select>
+
+    <select [(ngModel)]="selectedStatus" (ngModelChange)="applyFilters()">
+      <option value="">All Statuses</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+  </div>
+
+  <p class="loading" *ngIf="isLoading">Loading...</p>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  <table *ngIf="!isLoading && !errorMessage">
+    <thead>
+      <tr>
+        <th (click)="setSort('id')"># {{ sortIcon('id') }}</th>
+        <th (click)="setSort('name')">Name {{ sortIcon('name') }}</th>
+        <th (click)="setSort('category')">Category {{ sortIcon('category') }}</th>
+        <th (click)="setSort('price')">Price {{ sortIcon('price') }}</th>
+        <th (click)="setSort('stock')">Stock {{ sortIcon('stock') }}</th>
+        <th (click)="setSort('status')">Status {{ sortIcon('status') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of pagedProducts">
+        <td>{{ p.id }}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.category }}</td>
+        <td>{{ p.price | currency:'USD' }}</td>
+        <td>{{ p.stock }}</td>
+        <td>
+          <span class="badge" [ngClass]="'badge-' + p.status">{{ p.status }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination" *ngIf="totalPages > 1">
+    <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">‹</button>
+    <button
+      *ngFor="let page of pages"
+      (click)="goToPage(page)"
+      [class.active]="page === currentPage">
+      {{ page }}
+    </button>
+    <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">›</button>
+  </div>
+
+  <p class="summary" *ngIf="!isLoading">
+    Showing {{ pagedProducts.length }} of {{ filteredProducts.length }} products
+    &nbsp;·&nbsp; Page {{ currentPage }} of {{ totalPages }}
+  </p>
+</div>

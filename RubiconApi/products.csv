@@ -1,0 +1,101 @@
+id,name,category,price,stock,status,created_at
+1,Wireless Mouse,Peripherals,49.99,120,active,2024-01-15
+2,Mechanical Keyboard,Peripherals,189.90,45,active,2024-01-16
+3,27" Monitor,Monitors,899.00,18,active,2024-01-17
+4,USB-C Hub,Accessories,79.50,200,active,2024-01-18
+5,Webcam HD 1080p,Peripherals,199.00,60,active,2024-01-19
+6,Noise Cancelling Headset,Audio,349.00,30,active,2024-01-20
+7,Laptop Stand,Accessories,89.00,150,active,2024-01-21
+8,SSD 1TB External,Storage,299.00,75,active,2024-01-22
+9,HDMI Cable 2m,Cables,19.90,500,active,2024-01-23
+10,Ethernet Cable Cat6,Cables,14.90,600,active,2024-01-24
+11,Wireless Charger,Accessories,59.90,180,active,2024-01-25
+12,Smart Speaker,Audio,249.00,40,inactive,2024-01-26
+13,4K Webcam,Peripherals,399.00,20,active,2024-01-27
+14,Blue Light Glasses,Accessories,99.00,90,active,2024-01-28
+15,Desk Mat XL,Accessories,69.00,110,active,2024-01-29
+16,Monitor Arm,Accessories,149.00,55,active,2024-01-30
+17,USB Microphone,Audio,229.00,35,active,2024-02-01
+18,Drawing Tablet,Peripherals,459.00,22,active,2024-02-02
+19,SD Card 256GB,Storage,89.00,300,active,2024-02-03
+20,Card Reader USB,Accessories,29.90,250,active,2024-02-04
+21,Gaming Headset,Audio,279.00,48,active,2024-02-05
+22,Ergonomic Chair,Furniture,1299.00,8,active,2024-02-06
+23,Standing Desk,Furniture,2499.00,5,active,2024-02-07
+24,Keyboard Wrist Rest,Accessories,39.90,200,active,2024-02-08
+25,Mouse Pad Gaming,Accessories,49.90,175,active,2024-02-09
+26,Portable SSD 512GB,Storage,199.00,85,active,2024-02-10
+27,Thunderbolt Dock,Accessories,599.00,15,active,2024-02-11
+28,Mini PC,Computers,899.00,12,active,2024-02-12
+29,Raspberry Pi 4,Computers,349.00,40,active,2024-02-13
+30,Arduino Starter Kit,Computers,149.00,60,active,2024-02-14
+31,NVMe SSD 2TB,Storage,599.00,30,active,2024-02-15
+32,RAM 32GB DDR5,Components,389.00,25,active,2024-02-16
+33,GPU RTX 4060,Components,1799.00,7,active,2024-02-17
+34,CPU Cooler,Components,189.00,20,active,2024-02-18
+35,Case ATX Mid Tower,Components,249.00,14,active,2024-02-19
+36,Power Supply 750W,Components,329.00,18,active,2024-02-20
+37,Motherboard B650,Components,699.00,10,active,2024-02-21
+38,Wi-Fi 6 Router,Networking,499.00,22,active,2024-02-22
+39,Network Switch 8P,Networking,179.00,35,active,2024-02-23
+40,Powerline Adapter,Networking,129.00,50,active,2024-02-24
+41,UPS 600VA,Power,299.00,20,active,2024-02-25
+42,Smart Power Strip,Power,119.00,65,active,2024-02-26
+43,Extension Cord 3m,Power,39.90,300,active,2024-02-27
+44,Cable Management Kit,Accessories,49.90,150,active,2024-02-28
+45,Anti-static Wrist Strap,Accessories,14.90,400,active,2024-03-01
+46,Thermal Paste,Components,29.90,500,active,2024-03-02
+47,SATA Cable,Cables,9.90,700,active,2024-03-03
+48,PCIe Riser Cable,Cables,59.90,80,active,2024-03-04
+49,OLED Monitor 27",Monitors,1499.00,6,active,2024-03-05
+50,Ultrawide Monitor 34",Monitors,1799.00,4,active,2024-03-06
+51,Portable Monitor 15",Monitors,699.00,18,active,2024-03-07
+52,Projector 1080p,Displays,1199.00,9,inactive,2024-03-08
+53,Screen Cleaner Kit,Accessories,19.90,350,active,2024-03-09
+54,Privacy Screen Filter,Accessories,79.00,70,active,2024-03-10
+55,Laptop Backpack,Accessories,179.00,55,active,2024-03-11
+56,Laptop Sleeve 15",Accessories,49.90,120,active,2024-03-12
+57,USB-A to USB-C Cable,Cables,19.90,800,active,2024-03-13
+58,Lightning Cable 1m,Cables,24.90,600,active,2024-03-14
+59,Coiled USB Cable,Cables,39.90,200,active,2024-03-15
+60,Magnetic Cable,Cables,34.90,150,active,2024-03-16
+61,USB 3.0 Hub 7P,Accessories,69.00,90,active,2024-03-17
+62,Bluetooth Adapter,Networking,39.90,200,active,2024-03-18
+63,Fingerprint Reader,Security,89.00,60,active,2024-03-19
+64,YubiKey 5,Security,299.00,25,active,2024-03-20
+65,Password Manager Key,Security,149.00,40,active,2024-03-21
+66,Webcam Cover,Security,9.90,1000,active,2024-03-22
+67,Privacy Screen,Security,99.00,45,active,2024-03-23
+68,Surge Protector,Power,79.90,80,active,2024-03-24
+69,Label Maker,Office,129.00,35,active,2024-03-25
+70,Document Scanner,Office,399.00,15,active,2024-03-26
+71,Wireless Presenter,Office,99.00,50,active,2024-03-27
+72,USB Barcode Scanner,Office,149.00,30,active,2024-03-28
+73,Receipt Printer,Office,499.00,10,inactive,2024-03-29
+74,POS Terminal,Office,899.00,8,inactive,2024-03-30
+75,Numeric Keypad,Peripherals,49.90,120,active,2024-04-01
+76,Trackball Mouse,Peripherals,129.00,40,active,2024-04-02
+77,Vertical Mouse,Peripherals,99.00,65,active,2024-04-03
+78,Split Keyboard,Peripherals,349.00,20,active,2024-04-04
+79,60% Keyboard,Peripherals,249.00,30,active,2024-04-05
+80,Mechanical Switches,Components,49.90,500,active,2024-04-06
+81,Keycap Set,Peripherals,89.00,150,active,2024-04-07
+82,Deskpad Leather,Accessories,149.00,45,active,2024-04-08
+83,Monitor Calibrator,Accessories,499.00,8,active,2024-04-09
+84,Stream Deck Mini,Peripherals,449.00,15,active,2024-04-10
+85,Capture Card 4K,Peripherals,699.00,12,active,2024-04-11
+86,Green Screen,Accessories,199.00,25,active,2024-04-12
+87,Ring Light 10",Accessories,129.00,40,active,2024-04-13
+88,Mic Boom Arm,Audio,99.00,55,active,2024-04-14
+89,Pop Filter,Audio,29.90,200,active,2024-04-15
+90,Acoustic Foam Panel,Audio,79.00,80,active,2024-04-16
+91,Bluetooth Speaker,Audio,199.00,50,active,2024-04-17
+92,DAC Amplifier,Audio,299.00,20,active,2024-04-18
+93,In-Ear Monitors,Audio,449.00,15,active,2024-04-19
+94,Noise Machine,Audio,89.00,60,active,2024-04-20
+95,Smart Plug,Power,49.90,200,active,2024-04-21
+96,PoE Injector,Networking,79.90,40,active,2024-04-22
+97,Patch Panel 24P,Networking,149.00,20,active,2024-04-23
+98,KVM Switch 2P,Networking,199.00,18,active,2024-04-24
+99,Fiber Optic Cable,Cables,49.90,100,active,2024-04-25
+100,Cable Tester,Networking,69.00,35,active,2024-04-26
