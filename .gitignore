@@ -1,0 +1,58 @@
+# ─── .NET ─────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+*.dll
+*.exe
+[Ll]og/
+[Ll]ogs/
+
+# ─── Visual Studio ────────────────────────────────────
+.vs/
+.vscode/
+*.rsuser
+*.VC.db
+*.VC.VC.opendb
+
+# Rider / VS for Mac
+.idea/
+*.DotSettings.user
+
+# ─── Node / Angular ───────────────────────────────────
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ─── Build / Publish output ───────────────────────────
+publish/
+out/
+**/bin/
+**/obj/
+
+# ─── OS files ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─── Environment / secrets ────────────────────────────
+*.env
+*.env.local
+appsettings.Development.json
+appsettings.Local.json
+
+# ─── Editor / tooling ─────────────────────────────────
+.claude/
+*.swp
+*.swo
+*~
