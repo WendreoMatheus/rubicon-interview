@@ -1,0 +1,31 @@
+services:
+  api:
+    build:
+      context: ./RubiconApi
+      dockerfile: Dockerfile
+    container_name: rubicon-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:5000
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    networks:
+      - rubicon-net
+
+  web:
+    build:
+      context: ./rubicon-front
+      dockerfile: Dockerfile
+    container_name: rubicon-web
+    depends_on:
+      - api
+    ports:
+      - "4200:80"
+    restart: unless-stopped
+    networks:
+      - rubicon-net
+
+networks:
+  rubicon-net:
+    driver: bridge
