@@ -200,19 +200,15 @@ You will be evaluated on the following, in order of priority:
 
 ## Troubleshooting
 
-**Port 5000 or 4200 already in use.** On Windows check with `netstat -ano | findstr :5000`. Either stop the other process or change the port (see note under the options).
+Quick reference:
 
-**`NETSDK1004: project.assets.json not found` in Visual Studio.** Right-click the project → *Restore NuGet Packages*, or run `dotnet restore` inside `RubiconApi/` and rebuild.
+- **Port 5000 or 4200 already in use** → `netstat -ano | findstr :5000`, kill the PID or change the port
+- **`NETSDK1004` in Visual Studio** → right-click project → *Restore NuGet Packages*
+- **Missing `@angular-devkit/build-angular`** → delete `node_modules` + `package-lock.json`, `npm install` again
+- **Empty table in the browser** → expected until you implement the TODOs
+- **Docker slow first build** → ~500 MB of base images; use `docker compose build` before your session
 
-**`Could not find the '@angular-devkit/build-angular:application' builder's node package`.** Delete `rubicon-front/node_modules` and `package-lock.json`, then run `npm install` again.
-
-**Visual Studio launches but hits CORS in the browser.** The API already configures `AllowAnyOrigin`. If you changed the backend URL, re-check that `API_URL` in `app.component.ts` matches.
-
-**Docker build is slow the first time.** Normal — base images are ~500 MB. Subsequent builds reuse the layer cache and finish in seconds.
-
-**Angular changes not reflected when using Docker.** Option A builds a production bundle; it doesn't hot-reload. For live reload, use Option B or C and run `npm start` natively.
-
-**HTTPS dev-cert prompt from .NET.** Harmless for this challenge — the API listens on HTTP only (`http://localhost:5000`). You can safely skip `dotnet dev-certs https --trust`.
+For step-by-step setup guides (Docker / Visual Studio / CLI) and the full list of common problems with fixes, see **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)**.
 
 ---
 
